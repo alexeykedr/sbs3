@@ -1,31 +1,30 @@
 package com.example.sbs3;
+/**
+ * Работа над заданием: 1 этап:
+ *
+ * 1.  получить список компаний из апи
+ * 2. на каждую компанию вызвать апи и получить данные
+ * */
 
-import com.example.sbs3.repository.OnLoadAPI;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 @SpringBootApplication
-public class Sbs3Application implements OnLoadAPI {
+public class Sbs3Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Sbs3Application.class, args);
 
 	}
-// при загрузке приложения вызов onloadAPI для каждой компании
-	@Override
-	public String getStockStartData(Long id) {
-		// вызов https://sandbox.iexapis.com/stable/ref-data/symbols ?токен=Tpk_ee567917a6b640bb8602834c9d30e571
-
-		// возвращает символы / названия / состояние для каждой торговой компании.
-		return "символы, etc";
-//		Ссылка: [https://iexcloud.io/docs/api/#symbols]
-
-	}
 }
 
-/*
-* ВОПРОСЫ:
-* 1. как сюда передать список компаний (лист компаний есть в классе Company, но как он туда попадает)
-* 2. какой должен быть список компаний
-* 3. ...
+/*ВОПРОСЫ
+* 1. мне нужен список компаний из ответа по
+*
+* The base url for the API is: https://cloud.iexapis.com/
 * */
