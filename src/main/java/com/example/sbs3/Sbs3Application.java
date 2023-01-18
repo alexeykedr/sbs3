@@ -1,19 +1,10 @@
 package com.example.sbs3;
-/**
- * Работа над заданием: 1 этап:
- *
- * 1.  получить список компаний из апи
- * 2. на каждую компанию вызвать апи и получить данные
- * */
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-
+@EnableScheduling
 @SpringBootApplication
 public class Sbs3Application {
 
@@ -23,8 +14,9 @@ public class Sbs3Application {
 	}
 }
 
-/*ВОПРОСЫ
-* 1. мне нужен список компаний из ответа по
-*
-* The base url for the API is: https://cloud.iexapis.com/
-* */
+/*
+Задачи:
+исправить падение сборки проекта
+
+Проблемы:
+ */
