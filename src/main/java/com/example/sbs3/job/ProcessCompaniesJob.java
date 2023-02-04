@@ -3,8 +3,6 @@ package com.example.sbs3.job;
 import com.example.sbs3.model.CompanyEntity;
 import com.example.sbs3.service.CompanyService;
 import com.example.sbs3.service.StockService;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

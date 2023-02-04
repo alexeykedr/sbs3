@@ -8,15 +8,20 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 public class Sbs3Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Sbs3Application.class, args);
 
+	public static void main(String[] args) {
+
+		SpringApplication.run(Sbs3Application.class, args);
 	}
 }
 
 /*
-Задачи:
-исправить падение сборки проекта
+  Задачи:
+пройти дебагером почему падает сборка.
+добавить очередь в фьючер
 
-Проблемы:
+ получение гет
+до 01.03.23
  */
+
+
